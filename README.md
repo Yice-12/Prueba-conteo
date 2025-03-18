@@ -4,6 +4,3 @@ Prueba Conteo
 
 1. Se deben seguir los pasos del README que se encuentra dentro de la carpeta conteo-backend
 2. Se deben seguir los pasos del README que se encuentra dentro de la carpeta conteo-frontend
-# Prueba-conteo
-# Prueba-conteo
-# Prueba-conteo
