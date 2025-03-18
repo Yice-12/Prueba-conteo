@@ -1,0 +1,44 @@
+.buttonAccount {
+  height: min-content;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  &:disabled {
+    pointer-events: none;
+    .buttonAccount {
+      &__content {
+        background-color: #b7b7b7;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    height: 48px;
+    box-shadow: 0 1px 2px 0 rgba(10, 13, 18, 0.05);
+    background-color: #70c093;
+    padding: 0 10px;
+
+    &:hover {
+      background-color: #47ae75;
+    }
+  }
+  &__loading {
+    animation: spin 2s linear infinite;
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  }
+}

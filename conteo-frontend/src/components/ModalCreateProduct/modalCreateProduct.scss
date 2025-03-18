@@ -1,0 +1,15 @@
+.modal-create-product {
+  &__content {
+    padding: 16px;
+    & > form {
+      display: flex;
+      gap: 8px;
+      flex-direction: column;
+    }
+  }
+  &__quantity {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,58 @@
+@use "../../mixin.scss" as m;
+
+.bottomSheetAccount {
+  display: flex;
+  align-items: flex-end;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(50, 50, 50, 0.7);
+  @include m.desktop() {
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    flex: 1;
+    background-color: white;
+    max-height: 98%;
+    @include m.desktop() {
+      max-width: 491px;
+      overflow: hidden;
+      border-bottom-left-radius: 24px;
+      border-bottom-right-radius: 24px;
+    }
+  }
+
+  &__icon-close {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 16px;
+    margin-left: 16px;
+
+    & > div {
+      width: 32px;
+      cursor: pointer;
+    }
+    & h1 {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+  }
+
+  &__content-children {
+    flex: 1;
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+}

@@ -1,0 +1,78 @@
+.input {
+  width: 100%;
+  flex: 1;
+
+  &__content {
+    position: relative;
+  }
+
+  &__error {
+    & input {
+      border: solid 1.5px #f10000 !important;
+    }
+  }
+  &__left-icon {
+    position: absolute;
+    top: 13px;
+    left: 14px;
+  }
+
+  &__right-icon {
+    position: absolute;
+    right: 14px;
+    top: 13px;
+  }
+
+  & label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 14px;
+    transition: 300ms all;
+    color: #848484;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.71;
+  }
+
+  &__input-left-icon {
+    padding-left: 44px !important;
+  }
+
+  &__label-left-icon {
+    padding-left: 44px !important;
+  }
+
+  & input {
+    width: 100%;
+    height: 50px;
+    border: solid 1px #aaa;
+    padding: 24px 44px 10px 14px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    &:focus {
+      outline: none;
+      border: solid 2px #70c093;
+    }
+
+    &:focus + label,
+    &:not(:placeholder-shown) + label {
+      height: 60%;
+      transform: translateY(0%);
+      font-size: 11px;
+      line-height: 0.91;
+    }
+  }
+  &__message-error {
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #f10000;
+    margin-top: 4px;
+  }
+}
